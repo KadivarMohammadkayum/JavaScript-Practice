@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Global & Local Variable</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <!-- Lokal Variable are not Worked functions out side and global variable are function out side and function inner side both side worked -->
+
+
+    <script>
+
+        // Globel variable example :
+        var a = "Global variable";  // ---> Global Variable
+
+        function hello(){
+            var a = "Global variable" //---> Local Variable
+            document.write(a + "<br>" , "<br>");
+        }
+
+        hello(); // --> local varable 
+        document.write(a); // ---> globle variable
+        document.write("<br>", "<br>", "<br>",)
+
+        // local varible example :
+        
+
+        function name(){
+            var b = "Local Variable";  // local variable
+            document.write(b);
+        }
+
+        name(); // local variable
+        
+
+    </script>
+</body>
+</html>

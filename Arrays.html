@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Arrays</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!--  Array are storing a collection of multiple items under a single variable name -->
+    <!--  Arrays inside muktipale data type are add. -->
+    <!--  Array index star with 0 after 1 2 3 4........ -->
+
+    <script>
+        var array = [10, 20, 30, 40, 50, 60, 70, 80];
+
+        var sum = 0;
+        document.write("<ul>");
+
+        for(var a = 3; a <= 6; a++){
+            document.write( "<li>" + array [a] + "</li>");
+            sum = sum + array[a];
+        }
+        document.write("</ul>")
+        document.write(" Total Sum : " + sum + "<br>");
+
+        document.write("<br>");
+        document.write("<br>");
+
+        // Another ay to create a arrays
+
+        var array = new Array ();
+        array[0] = 10;
+        array[1] = "Kayum";
+        array[3] = true;
+        array[5] = 20;
+        
+        document.write("<ul>");
+
+        for(var a = 0; a <= 6; a++){
+            document.write( "<li>" + array [a] + "</li>");           
+        }
+        document.write("</ul>");
+
+        document.write("<br>"); 
+        document.write("<br>"); 
+
+
+        // user input value
+        var ary = new Array();
+
+        for(var g = 0; g < 3; g++){
+        //    ary[g] = prompt("Enter the value : ") 
+        }
+       
+        for(var a = 0; a <= 3; a++){
+            document.write(ary[a] + "<br>");
+        } 
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        // Multidimensional Arrays :
+
+        // Multidimensional Array meaning 1 array inside multiple arrays
+
+        var ary = [
+            ["kayum", 20, "male", "b.com"],
+            ["mohib", 25, "male", "b.sc"],
+            ["mujahid",30, "male", "b.com"],
+            ["najim", 23, "male", "b.a"],
+            ["jabir", 24, "male", "bba"]
+        ];
+
+        // document.write( ary [2] [2]);
+
+        // .length are count array collum and row
+
+        document.write(ary.length); // count array length
+        document.write("<table border='1px' cellspacing='0'>");
+
+        for(var a = 0; a < ary.length; a++){
+        // for(var a = 0; a < 4; a++){
+            document.write("<tr>");
+            for(var b = 0; b < 4; b++ ){
+                document.write( "<td>" + ary[a][b] + "</td>");
+            }
+            document.write("</tr>");
+        }
+        document.write("</table>");
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>"); 
+        document.write("<br>");
+
+        // Modify and Delet Array Element
+
+        var a = ["kayum", 18, "male", "b.sc" ];
+        document.write( a + "<br>");
+        a[0] = "kadivar"; // modify
+        document.write(a + "<br>");
+        delete a[1];  // delete
+        document.write(a);
+
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+        document.write("<br>");
+
+        // Array method :
+
+        // short / reverse
+
+        var b = ["kayum", "akil", "vasim", "inayat", "mujahid"];
+        document.write(b + "<br><br>");
+        b.sort();    // The sort() method sorts an array alphabetically:
+        document.write(b + "<br>");
+        b.reverse();    // The reverse() method reverses the elements in an array:  
+        document.write(b + "<br>");
+
+        document.write("<br>");
+        document.write("<br>");
+
+
+        // Arrray pop() and push()
+
+        var b = ["kayum", "akil", "vasim", "inayat", "mujahid"];
+        document.write(b + "<br><br>");
+        b.pop();  
+        // The push() method adds new items to the end of an array.
+        // The push() method changes the length of the array.
+        // The push() method returns the new length.
+        document.write(b + "<br>");
+
+        b.push("ayub");    
+        // The push() method adds new items to the end of an array.
+        // The push() method changes the length of the array.
+        // The push() method returns the new length.
+        document.write(b + "<br>");
+        b.push("samir");    // push are new function 
+        document.write(b + "<br>");
+               
+        document.write("<br>");
+        document.write("<br>");
+
+
+        // Array shift and unshift
+
+        var b = ["kayum", "akil", "vasim", "inayat", "mujahid"];
+        document.write(b + "<br><br>");
+        b.shift();  // shift() removes the first item of an array:
+        document.write(b + "<br>");
+        b.unshift("zaid");  //  unshift() adds new items to the beginning of an array:
+        document.write(b + "<br>");
+        b.unshift("zahir"); //  unshift() adds new items to the beginning of an array:
+        document.write(b + "<br>");
+
+        document.write("<br>");
+        document.write("<br>");
+
+
+        // concat and join arrray
+        var b = ["kayum", "akil", "inayat", "mujahid"];
+        var c = b.concat("mustakim", "husen");  
+        // The concat() method concatenates (joins) two or more arrays.
+        // The concat() method returns a new array, containing the joined arrays.
+        document.write(c + "<br>");
+
+        var b = ["kayum", "akil", "inayat", "mujahid"];
+        var c = ["mahin", "rahil"];
+        var d = b.concat(c);
+        document.write(d + "<br>");
+
+        var b = ["inayat", "najim"];
+        var c = ["asraf", "atik"];
+        var d = ["jabir", "najir"];
+        var e = b.concat(c,d);
+        document.write(e + "<br>");
+
+        document.write("<br>");
+
+        var b = ["inayat", "najim"];
+        var c = ["asraf", "atik"];
+        var d = b.concat(d);
+        document.write(d + "<br>");
+        var e = d.join("  ");
+        document.write(e + "<br>");
+
+        document.write("<br>");
+
+        var b = ["inayat", "najim"];
+        var c = ["asraf", "atik"];
+        var d = b.concat(d);
+        document.write(d + "<br>");
+        var e = d.join("-");
+        // The join() method returns an array as a string.
+        // The join() method does not change the original array.
+        document.write(e + "<br>");
+
+        document.write("<br>");
+
+        document.write("<br>");
+        var b = ["inayat", "najim"];
+        var c = ["asraf", "atik"];
+        var d = b.concat(c);
+        document.write(d + "<br>");
+        var e = d.join(" <br> ");
+        document.write(e + "<br>");
+
+        
+
+    </script>
+</body>
+</html>

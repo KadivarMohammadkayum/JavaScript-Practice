@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Siwtch Statement</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- The switch statement is used to perform different actions based on different conditions.   -->
+
+    <!-- Switching Details
+
+            If multiple cases matches a case value, the first case is selected.
+
+            If no matching cases are found, the program continues to the default label.
+
+            If no default label is found, the program continues to the statement(s) after the switch. -->
+
+    <h2>JavaScript switch</h2>
+
+    <p id="demo"></p>
+
+    <script>
+        switch (new Date().getDay()) {
+            case 0:
+                day = "Sunday";
+                break;
+            case 1:
+                day = "Monday";
+                break;
+            case 2:
+                day = "Tuesday";
+                break;
+            case 3:
+                day = "Wednesday";
+                break;
+            case 4:
+                day = "Thursday";
+                break;
+            case 5:
+                day = "Friday";
+                break;
+            case 6:
+                day = "Saturday";
+            }
+            document.getElementById("demo").innerHTML = "Today is " + day;
+    </script>
+
+</body>
+</html>

@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+    <title>Events</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+    <script src='main.js'></script>
+</head>
+<body>
+    <!-- Basic Events LIst
+    
+    ->  Click,          (onclick);
+    ->  Double Click,   (ondbclick)
+    ->  Right Cick,     (oncontextmenu)
+    ->  Mouse Hover,    (onmouseenter)
+    ->  Mouse Uot,      (onmuseuot)
+    ->  Mouse Down,     (onmosedown)
+    ->  Mouse Up,       (onmoseup)
+    ->  Key Press,      (onkeypress)
+    ->  Key Up,         (onkeyup)
+    ->  Load,           (onload)
+    ->  Unload,         (onunload)
+    ->  Resize,         (onresize)
+    ->  Scroll.         (onscroll)
+                    
+
+    -->
+
+    <script>
+        function hello(){
+            document.write("Hello Everyone");
+            alert("Are You Sure?")
+        }
+
+
+    </script>
+
+    <button type="button" onclick="hello()">on click</button> <br><br>
+    <button ondblclick="hello()">Double click</button>
+    <button onmouseup="hello()">oncontextmenu</button>
+    <button onkeyup="hello()">key up</button>
+</body>
+</html>
